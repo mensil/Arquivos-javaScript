@@ -11,12 +11,25 @@
         // OU (||) - Verdadeiro se pelo menos uma das expressoões for verdadeiras;
         // Negação (!) - Inverte o resultado da expressão de comparação;
 
-        if (!(2 == 2) || 3 >= 4) {
-            document.write('Verdadeiro')
+        var nota = prompt('Digite a nota do aluno');
+        var faltas = prompt('Digite a quantidade de faltas');
+
+        var media = 7;
+        var faltas_maxima = 15;
+
+        //if (!(2 == 2) || 3 >= 4) {
+        //document.write('Verdadeiro')
+        //}
+        //else {
+        //document.write('Falso')
+        //}
+        if (nota >= media && faltas <= faltas_maxima) {
+            document.write('Aprovado')
         }
         else {
-            document.write('Falso')
+            document.write('Reprovado')
         }
+
     </script>
 
 </head>
