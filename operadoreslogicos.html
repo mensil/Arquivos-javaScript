@@ -17,18 +17,24 @@
         var media = 7;
         var faltas_maxima = 15;
 
-        //if (!(2 == 2) || 3 >= 4) {
-        //document.write('Verdadeiro')
-        //}
-        //else {
-        //document.write('Falso')
-        //}
-        if (nota >= media && faltas <= faltas_maxima) {
+        /*if (!(2 == 2) || 3 >= 4) {
+        document.write('Verdadeiro')
+        }
+        else {
+        document.write('Falso')
+        }*/
+
+        /*if (nota >= media && faltas <= faltas_maxima) {
             document.write('Aprovado')
         }
         else {
             document.write('Reprovado')
-        }
+        }*/
+        
+        
+        //Operador ternário (forma inchuta de escrever uma condição)
+        var resultado = (nota >= media && faltas <= faltas_maxima) ? 'Aprovado' : 'Rerpovado';
+        document.write(resultado);
 
     </script>
 
