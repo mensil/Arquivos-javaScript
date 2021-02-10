@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--<script src="variaveis.js"></script>-->
+    <title>função callback</title>
+
+    <script>
+
+        function exibirArtigo (id, callbackSucesso, callbackErro){
+        if (false) {
+            callbackSucesso ('funções de callback em JS','funções da callback são funções...')
+            
+        }else {
+            callbackErro('Erro ao recuperar os dados')
+        }
+    }
+
+ var callbackSucesso = function(titulo, descrição){
+     document.write('<h1>' + titulo + '</h1>')
+     document.write ('<hr/>')
+     document.write('<p>' + descrição + '</p>')
+ }
+
+ var callbackErro = function(erro){
+     document.write('<p><b>Erro:<br/>' + erro + '</p>')
+ }
+
+ exibirArtigo (2, callbackSucesso, callbackErro)
+    </script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+</body>
+
+</html>
