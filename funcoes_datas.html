@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--<script src="variaveis.js"></script>-->
+    <title>JavaScript</title>
+
+    <script>
+   var data = new Date()
+/*
+  //document.write( data.getDate())
+  //document.write( '<br/>')
+  //document.write( data.getDate() + '/' + (data.getMonth()+1) + '/' + data.getFullYear())
+
+  //Adicionar ou remover dias
+  document.write(data.toString())
+  data.setDate(data.getDate()+720)
+  document.write( '<br/>')
+    document.write( '<hr/>')
+  document.write(data.toString())
+  document.write( '<hr/>')
+
+  //Adicioanar ou remover meses
+  document.write(data.toString())
+  data.setMonth(data.getMonth()+1)
+  document.write( '<br/>')
+    document.write( '<hr/>')
+  document.write(data.toString())
+  document.write( '<hr/>')
+
+  //Adicioanar ou remover anos
+  document.write(data.toString())
+  data.setFullYear(data.getFullYear()-1)
+  document.write( '<br/>')
+    document.write( '<hr/>')
+  document.write(data.toString())*/
+
+  //15/01/2017
+
+  var data1 = new Date(2017,0,15)
+  //23/02/2017
+
+  var data2 = new Date(2017,1,23)
+
+  document.write(data1.toString())
+  document.write( '<hr/>')
+    document.write(data2.toString())
+    document.write( '<hr/>')
+
+
+    //converter as datas para algo que podemos calcular
+
+    document.write(data1.getTime())
+    document.write( '<hr/>')
+    document.write(data2.getTime())
+
+    document.write( '<hr/>')
+
+
+    //encontrar a quantidade de mile segundos
+var milissegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+    document.write(Math.abs(milissegundos_entre_datas))
+
+    // 1 dia tem 24h, 1 hora 60s e cada seguntos tem 1000 milisegundo
+
+    var milissegundos_por_dia = (1*24*60*60*1000)
+
+    document.write('1 dia tem: ' + milissegundos_por_dia  + ' milissegundos' )
+
+    document.write( '<hr/>')
+
+    document.write ('A difereça é de ' + Math.ceil(milissegundos_entre_datas/milissegundos_por_dia) + ' Dias')
+
+
+
+
+
+
+
+
+    </script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+</body>
+
+</html>

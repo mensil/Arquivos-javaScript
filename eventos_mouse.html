@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--<script src="variaveis.js"></script>-->
+    <title>Eventos Mouse</title>
+
+    <script>
+  function acao1(){
+      alert('Local Clicado')
+  }
+
+  function acao2(){
+      alert('Local Clicado 2 vezes')
+  }
+
+  function acao3(){
+      alert('Local Clicado na saida do click')
+  }
+
+  function acao4(){
+      alert('Ponteiro do mouse entrou passou na regiao')
+  }
+
+  function acao5(){
+      alert('Ponteiro do mouse apenas saiu na regiao')
+  }
+
+    </script>
+
+</head>
+
+<body>
+<div onclick="acao1()"  style="background: #ccc; height: 150px; width: 150px;"></div>  
+<br>
+<br>
+<div ondblclick="acao2()"  style="background: #700974; height: 150px; width: 150px;"></div>
+<br>
+<br>
+<div onmouseup="acao3()"  style="background: #094196; height: 150px; width: 150px;"></div>
+<br>
+<br>
+<div onmouseover="acao4()"  style="background: #10c938; height: 150px; width: 150px;"></div>
+<br>
+<br>
+<div onmouseout="acao5()" onmouseover="acao5()"  style="background: #b87c0e; height: 150px; width: 150px;"></div>
+
+
+</body>
+
+</html>
